@@ -27,3 +27,4 @@ hs_err_pid*
 .gitignore
 .idea/
 src/test/
+proxy.iml
