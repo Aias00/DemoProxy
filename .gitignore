@@ -28,3 +28,4 @@ hs_err_pid*
 .idea/
 src/test/
 proxy.iml
+target/classes/META-INF/proxy.kotlin_module
