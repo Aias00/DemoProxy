@@ -23,6 +23,7 @@ public class UserServiceInteceptor implements InvocationHandler {
         this.realObj = realObj;
     }
 
+    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("进入代理方法------");
         if (args != null && args.length > 0 && args[0] instanceof User) {

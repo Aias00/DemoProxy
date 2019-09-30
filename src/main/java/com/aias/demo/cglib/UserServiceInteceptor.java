@@ -8,6 +8,7 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 public class UserServiceInteceptor implements MethodInterceptor {
+    @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("进入代理方法------");
         if (objects != null && objects.length > 0 && objects[0] instanceof User) {

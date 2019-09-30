@@ -5,6 +5,7 @@ import com.aias.demo.User;
 
 public class UserServiceImpl implements UserService {
 
+    @Override
     public void addUser(User user) {
         System.out.println("用户入库成功：" + user.toString());
     }
